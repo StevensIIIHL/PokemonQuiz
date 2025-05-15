@@ -7,6 +7,7 @@ package pokemonquiz;
 
 /**
  *  Harold Stevens
+ *  Lab 8 ArrayList and HashMap
  */
 
 public class Pokemon {
@@ -22,7 +23,7 @@ public class Pokemon {
     private String imageUrl;
     private String description;
 
-    public Pokemon(int number, String name, String type1, String type2, int hp, int attack, int defense, int speed, String imageUrl, String description) {
+    public Pokemon( int number, String name, String type1, String type2, int hp, int attack, int defense, int speed, String imageUrl, String description ) {
         this.number = number;
         this.name = name;
         this.type1 = type1;
@@ -39,7 +40,7 @@ public class Pokemon {
     public String toString() {
         return String.format(
             "#%d %s\nType: %s%s\nHP: %d, Attack: %d, Defense: %d, Speed: %d\n%s",
-            number, name, type1, (type2.isEmpty() ? "" : "/" + type2), hp, attack, defense, speed, description
+            number, name, type1, ( type2.isEmpty() ? "" : "/" + type2 ), hp, attack, defense, speed, description
         );
     }
 
